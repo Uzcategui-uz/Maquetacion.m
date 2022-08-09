@@ -1,0 +1,12 @@
+.Galeria{
+    display: flex; 
+    flex-wrap: wrap;
+justify-content: space-between;
+}
+
+img{
+    width: 400px; 
+    height: 300px;
+    object-fit: cover; 
+
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Enlace para cargar boostrap desde internet-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Enlace para cargar jquery desde internet-->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="query.js"></script>
+    <title>Document</title>
+</head>
+
+<body background="imagenes/fondo.jpg" >
+    <main >
+    <!--Brand image-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="imagenes/logo.png" style="width: 300px;"><!--La propiedad style permite aplicar css desde el html con bootrap es necesario ahcer peque;as correciones-->
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-lg-9"><!--9 partes de 12 para la cesta de la compra-->
+            <!--Custom content-->
+            <div class="row">
+                <div class="col-sm-6 col-md-4" id="art1">
+                    <div class="thumbnail">
+                        <img src="imagenes/img1.jpg" style="width: 100%;">
+                        <div class="caption">
+                            <h3>Vestido de cóctel Mccabe de lino plisado</h3>
+                            <p class="descripcion">El vestido de cóctel Mccabe, confeccionado con ligero lino y delicados pliegues en la falda, se caracteriza por el elegante volante alrededor del cuello que baja en cascada por el cuerpo.</p>
+                            <p style="text-align: right;font-size: 20px; color:#d4195c"><span class="precio">2750.00</span> €</p>
+                            <p style="text-align: right;"><a href="#" class="btn btn-primary" role="button" onclick="agregarCarrito(1)">Agregar al Carrito</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" id="art2">
+                    <div class="thumbnail">
+                        <img src="imagenes/img2.jpg" style="width: 100%;">
+                        <div class="caption">
+                            <h3>Camiseta tex, 5 cap 8 </h3>
+                            <p class="descripcion">El Harlan explora la rica variedad de motivos de esta temporada y luce un patchwork diseñado con el vibrante motivo de la colección, inspirado en el libro Belleza. La estudiada estructura de la camiseta aúna nueve paneles de seda de morera, cada uno de ellos estampado/ letras de forma exquisita en Como (Italia). </p>
+                            <p style="text-align: right;font-size: 20px; color:#d4195c"><span class="precio">2390.00</span> €</p>
+                            <p style="text-align: right;"><a href="#" class="btn btn-primary" role="button" onclick="agregarCarrito(2)">Agregar al Carrito</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" id="art3">
+                    <div class="thumbnail">
+                        <img src="imagenes/img3.jpg" style="width: 100%;">
+                        <div class="caption">
+                            <h3>Vestido de noche Wynter</h3>
+                            <p class="descripcion">El vestido Wynter, confeccionado en Italia, combina con belleza una parte superior de cuello halter y espalda abierta con una falda plisada de cinco niveles. </p>
+                            <p style="text-align: right;font-size: 20px; color:#d4195c"><span class="precio">5590.00</span> €</p>
+                            <p style="text-align: right;"><a href="#" class="btn btn-primary" role="button" onclick="agregarCarrito(3)">Agregar al Carrito</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" id="art4">
+                    <div class="thumbnail">
+                        <img src="imagenes/img4.jpg" style="width: 100%;">
+                        <div class="caption">
+                            <h3>Mono de punto con cuello halter</h3>
+                            <p class="descripcion">Este mono de punto inspirado en un pareo, está diseñado con un precioso cuello halter anudado con un lazo y espalda abierta.</p>
+                            <p style="text-align: right;font-size: 20px; color:#d4195c"><span class="precio">2050.00</span> €</p>
+                            <p style="text-align: right;"><a href="#" class="btn btn-primary" role="button" onclick="agregarCarrito(4)">Agregar al Carrito</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" id="art5">
+                    <div class="thumbnail">
+                        <img src="imagenes/img5.jpg" style="width: 100%;">
+                        <div class="caption">
+                            <h3>Clasico aretes de oro</h3>
+                            <p class="descripcion">Echos en lo talleres de induistas .</p>
+                            <p style="text-align: right;font-size: 20px; color:#d4195c"><span class="precio">3450.00</span> €</p>
+                            <p style="text-align: right;"><a href="#" class="btn btn-primary" role="button" onclick="agregarCarrito(5)">Agregar al Carrito</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" id="art6">
+                    <div class="thumbnail">
+                        <img src="imagenes/img6.jpg" style="width: 100%;">
+                        <div class="caption">
+                            <h3>Vestido de noche con lentejuelas Landis</h3>
+                            <p class="descripcion">El vestido Landis, diseñado con un corpiño interior, fascina con los espectaculares adornos degradados que se presentan en uno de los tonos clave de la temporada: el amarillo carrera.</p>
+                            <p style="text-align: right;font-size: 20px; color:#d4195c"><span class="precio">8190.00</span> €</p>
+                            <p style="text-align: right;"><a href="#" class="btn btn-primary" role="button" onclick="agregarCarrito(6)">Agregar al Carrito</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" id="art7">
+                    <div class="thumbnail">
+                        <img src="imagenes/img7.jpg" style="width: 100%;">
+                        <div class="caption">
+                            <h3>Vestido de noche positivo y negativo </h3>
+                            <p class="descripcion">El vestido Kailyn está inspirado en el abrigo Kegan de la temporada, pero se ha confeccionado con crepé para crear un atrevido vestido de noche.</p>
+                            <p style="text-align: right;font-size: 20px; color:#d4195c"><span class="precio">1650.00</span> €</p>
+                            <p style="text-align: right;"><a href="#" class="btn btn-primary" role="button" onclick="agregarCarrito(7)">Agregar al Carrito</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" id="art8">
+                    <div class="thumbnail">
+                        <img src="imagenes/img8.jpg" style="width: 100%;">
+                        <div class="caption">
+                            <h3>Traje alternativo</h3>
+                            <p class="descripcion">El traje Fernanda combina las delicadas líneas de la silueta minimalistas de inspiración lencera, una de las prendas favoritas de la modelo , con el carácter despreocupado del cambray de algodón lavado.</p>
+                            <p style="text-align: right;font-size: 20px; color:#d4195c"><span class="precio">3050.00</span> €</p>
+                            <p style="text-align: right;"><a href="#" class="btn btn-primary" role="button" onclick="agregarCarrito(8)">Agregar al Carrito</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" id="art9">
+                    <div class="thumbnail">
+                        <img src="imagenes/img9.jpg" style="width: 100%;">
+                        <div class="caption">
+                            <h3>Vestido de cóctel con adornos Alexandrea</h3>
+                            <p class="descripcion">El vestido Alexandrea, confeccionado con tul elástico que se adapta con elegancia a la forma del cuerpo, se ve realzado con un adorno de lentejuelas por toda la prenda que produce un brillo exquisito a cada paso.</p>
+                            <p style="text-align: right;font-size: 20px; color:#d4195c"><span class="precio">3690.00</span> €</p>
+                            <p style="text-align: right;"><a href="#" class="btn btn-primary" role="button" onclick="agregarCarrito(9)">Agregar al Carrito</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-3"><!--3 partes de 12 para la cesta de la compra-->
+            <h3>Tu Cesta</h3>
+            <div id="cesta">
+            </div>
+            <p id="total" style="text-align: right; margin: 10px 20px; font-weight: bold;"></p>
+        </div>
+    </div>
+</main>
+</body>
+
+</html>
+

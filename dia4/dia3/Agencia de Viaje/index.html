@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Livvic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="querys.js"></script>
+    <title>Black City</title>
+</head>
+
+<body>
+    <header>
+        <img src="imagenes/logo.png" alt="" srcset="">
+        <div class="buscador">
+            <div class="ori_dest">
+                <input type="text" id="origen" name="origen" placeholder="Origen">
+                <input type="text" id="destino" name="destino" placeholder="Destino">
+            </div>
+            <div class="cant_fech">
+                <select name="cantidad" id="cantidad">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+                <input type="date" name="fecha" id="fecha">
+                <button onclick="filtrarContactos()">
+                    Filtrar
+                </button>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="content">
+        <div class="lugares">
+            <div class="place">
+                <img src="imagenes/img1.jpg" alt="">
+                <h2>Monaco</h2>
+            </div>
+            <div class="place">
+                <img src="imagenes/img2.jpg" alt="">
+                <h2>Tokio</h2>
+            </div>
+            <div class="place">
+                <img src="imagenes/img3.jpg" alt="">
+                <h2>Egipto</h2>
+            </div>
+        </div>
+    </div>
+    <div id="resultados">
+
+    </div>
+    <footer>
+        <form id="contacto">
+            <h2>Contactar</h2>
+            <label for="connombre">Nombre:</label>
+            <input type="text" id="connombre" name="connombre">
+            <label for="conorigen">Origen:</label>
+            <input type="text" id="conorigen" name="conorigen">
+            <label for="condestino">Destino:</label>
+            <input type="text" id="condestino" name="condestino">
+            <label for="concantidad">Cantidad de personas:</label>
+            <select name="concantidad" id="concantidad">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <label for="confecha">Fecha de viaje:</label>
+            <input type="date" name="confecha" id="confecha">
+            <label for="conmensaje">Mensaje:</label>
+            <textarea name="conmensaje" id="conmensaje" rows="10"></textarea>
+            <div class="enviar"><button onclick="solicitarInformacion(event)"> Solicitar información</button></div>
+        </form>
+    </footer>
+</body>
+
+</html>

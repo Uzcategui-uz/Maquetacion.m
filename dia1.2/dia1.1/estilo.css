@@ -1,0 +1,87 @@
+
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    padding: 20px;
+}
+
+.main{
+    border: solid 16px rgb(92, 94, 90);
+    height: 100%; 
+    border-radius: 15px;
+    width: 75%;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+header {
+    border: solid 3px rgb(68, 110, 5);
+    height: 70px; 
+      
+}
+
+nav {
+    border: solid 3px rgb(142, 0, 0);
+    height: 50px;
+}
+
+
+.granPadreAzul{
+    width: 0%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+
+}
+.PadreAzul{
+    width: 80%;
+    padding: 5px;
+    border: solid 3px rgb(21, 0, 255);
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.padreSect{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.section{
+    border: 4px solid plum;
+}
+
+.padreAside{
+    width: 20%;
+    border: 4px solid rgb(255, 187, 0);
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+footer {
+    border: solid 3px rgb(111, 134, 77);
+
+}
+
+aside {
+    border: solid 3px rgb(73, 145, 197);
+    height: 300px;
+   
+}
+

@@ -1,0 +1,113 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background: #eeeeee;
+   
+    
+}
+
+
+
+    
+
+
+.izquierda,
+.derecha {
+    width: 49%;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+}
+
+#back {
+    z-index: 1;
+    width: 100%;
+    margin-top: 40px;
+}
+
+#front {
+    position: absolute;
+    margin-top: 40px;
+    z-index: 2;
+    width: 55%;
+    left: 33%;
+    top: 3%;
+}
+
+.derecha {
+    padding: 30px;
+}
+
+.formulario,
+.registro {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+
+    background: #ffffff;
+}
+
+.formulario>img {
+    max-width: 200px;
+    margin:  20px auto;
+}
+
+input{
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.enviar{
+    background-color: rgba(0,149,246,.3);
+    border: none;
+    color: white;
+   
+}
+
+.mid{
+    display: flex;
+    margin: 30px 0;
+}
+
+hr{
+    border-top: 1px solid #000;
+    width: 100%;
+}
+
+.mid span {
+    padding: 0 20px;
+}
+
+.social img{
+    height: 20px;
+    margin-right: 10px;
+}
+
+.social div{
+    display: flex;
+    justify-content: center;
+}
+
+.registro{
+    margin: 20px 0;
+}
+.app{
+    text-align: center;
+}
+
+.app div{
+    width: 100%;
+    display: flex;
+}
+.app img{
+    width: 40%;
+    margin: 0 5%;
+}

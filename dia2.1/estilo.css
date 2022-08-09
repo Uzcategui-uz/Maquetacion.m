@@ -1,0 +1,56 @@
+.main {
+    border: 9px solid rgb(90, 81, 67);
+    display: flex;
+    flex-direction: row;
+
+}
+
+.izquierda {
+    /* border: 3px solid orangered; */
+    width: 30%;
+    background-image: url("fondo2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.foto {
+    /* border: 2px solid green; */
+    width: 100%;
+}
+
+.foto__img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+
+.derecha {
+    /* border: 3px solid yellowgreen; */
+    width: 70%;
+   
+    background-image: url("foto2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.idiomas {
+    display: flex;
+    /* definicion eje principal */
+    flex-direction: row;
+    /* posicion en eje principal */
+    justify-content: left;
+    width: 100%;
+    padding: 10px;
+
+
+}
+
+.idiomas__idiomas {
+    width: 50%;
+}
+
+.idiomas__info {
+    width: 50%;
+}

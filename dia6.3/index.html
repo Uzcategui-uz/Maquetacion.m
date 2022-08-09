@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-rows: 10vh 80vh 10vh;
+            grid-template-columns: 75% 25%;
+            color: white;
+            text-align: center;
+        }
+        
+        header {
+            grid-column: 1/ span 2;
+            background-color: black;
+        }
+        
+        .grid-content {
+            background-color: blue;
+            display: grid;
+            grid-template-columns: 66% auto;
+            grid-template-rows: 30% auto;
+            gap: 10px;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        .top {
+            grid-column: 1/ span 2;
+        }
+        
+        .grid-content div {
+            border: 1px solid white;
+            padding: 10px;
+        }
+        
+        .grid-menu {
+            background-color: aquamarine;
+            display: grid;
+            gap: 10px;
+            padding: 10px;
+        }
+        
+        .grid-menu div {
+            border: 1px solid black;
+            padding-top: 30px;
+        }
+        
+        .grid-menu div:nth-child(n+2) {
+            background-color: black;
+        }
+        
+        footer {
+            grid-column: 1/ span 2;
+            background-color: blueviolet;
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+            padding: 10px;
+        }
+        
+        footer div {
+            border: 1px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <h1>HEADER</h1>
+        </header>
+        <div class="grid-content">
+            <div class="top">
+                <h2>CONTENIDO</h2>
+            </div>
+            <div class="left">Texto 1</div>
+            <div class="right">Texto 2</div>
+        </div>
+        <div class="grid-menu">
+            <div class="main-menu">
+                <h2>MENU</h2>
+            </div>
+            <div>Menu 1</div>
+            <div>Menu 2</div>
+            <div>Menu 3</div>
+        </div>
+        <footer>
+            <div>Footer</div>
+            <div>Contacto</div>
+        </footer>
+    </div>
+</body>
+
+</html>
